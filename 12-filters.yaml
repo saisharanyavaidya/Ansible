@@ -37,3 +37,13 @@
         Duration: 40hrs
     ansible.builtin.debug:
       msg: "printing dictionary {{mydict}}"
+  
+  - name: dictionary after convert
+    vars:
+      mydict:
+        course: Ansible
+        Trainer: Siva
+        Duration: 40hrs
+    ansible.builtin.debug:
+      msg: "printing dictionary {{mydict | dict2items}}"
+  
