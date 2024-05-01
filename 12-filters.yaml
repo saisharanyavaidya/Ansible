@@ -55,4 +55,13 @@
       - {'key': 'Duration', 'value': '120hr'}
     ansible.builtin.debug:
       msg: "my list before convert {{myList}}"
+
+  - name: list to dictionary
+    vars:
+      myList:
+      - {'key': 'Course', 'value': 'Ansbile'}
+      - {'key': 'Trainer', 'value': 'Sivakumar'}
+      - {'key': 'Duration', 'value': '120hr'}
+    ansible.builtin.debug:
+      msg: "my list before convert {{myList | items2dict}}"
   
