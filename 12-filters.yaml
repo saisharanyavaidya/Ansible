@@ -38,7 +38,7 @@
     ansible.builtin.debug:
       msg: "printing dictionary {{mydict}}"
   
-  - name: dictionary after convert
+  - name: dictionary after convert to list
     vars:
       mydict:
         course: Ansible
@@ -46,4 +46,13 @@
         Duration: 40hrs
     ansible.builtin.debug:
       msg: "printing dictionary {{mydict | dict2items}}"
+
+  - name: list
+    vars:
+      mylist:
+      - {'key': 'Course', 'value': 'Ansbile'}
+      - {'key': 'Trainer', 'value': 'Sivakumar'}
+      - {'key': 'Duration', 'value': '120hr'}
+    ansible.builtin.debug:
+      msg: "my list before convert {{myList}}"
   
