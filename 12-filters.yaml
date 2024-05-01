@@ -1,6 +1,12 @@
 - name: Filters
   hosts: localhost
   tasks:
-  - name:
+  - name: default value
     ansible.builtin.debug:
       msg: "printing {{course | default('ansible')}}"
+
+  - name: upper case
+    vars:
+      greeting: Good Morning
+    ansible.builtin.debug:
+      msg: "printing uppercase {{greeting | upper}}"
