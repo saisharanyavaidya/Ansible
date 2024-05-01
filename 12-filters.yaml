@@ -49,7 +49,7 @@
 
   - name: list
     vars:
-      mylist:
+      myList:
       - {'key': 'Course', 'value': 'Ansbile'}
       - {'key': 'Trainer', 'value': 'Sivakumar'}
       - {'key': 'Duration', 'value': '120hr'}
