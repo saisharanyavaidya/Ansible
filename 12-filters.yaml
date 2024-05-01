@@ -35,6 +35,7 @@
         course: Ansible
         Trainer: Siva
         Duration: 40hrs
+    tasks:
     - name: before convert
       ansible.builtin.debug:
         msg: "printing dictionary {{mydict}}"
