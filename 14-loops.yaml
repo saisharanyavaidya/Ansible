@@ -3,7 +3,7 @@
   tasks:
   - name: installing packages
     ansible.builtin.dnf:
-      name: {{item}}
+      name: "{{item}}"
       state: latest
     loop:
     - nginx
