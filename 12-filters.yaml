@@ -16,3 +16,9 @@
       greeting: Good Morning
     ansible.builtin.debug:
       msg: "printing lowercase {{greeting | lower}}"
+
+  - name: unique values
+    vars:
+      num: [1,2,4,4,4,5,5,7,8]
+    ansible.builtin.debug:
+      msg: "printing unique {{num | unique}}"
