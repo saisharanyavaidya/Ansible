@@ -1,6 +1,6 @@
 - name: print numbers
   hosts: localhost
-  vars-prompt:
+  vars_prompt:
   - name: number
     prompt: please enter number
     private: no
