@@ -9,5 +9,5 @@
       private: true
   tasks:
   - name: print variables
-      ansible.builtin.debug:
-        msg: "Hi, Username is {{USERNAME}} and password is {{PASSWORD}}"
+    ansible.builtin.debug:
+      msg: "Hi, Username is {{USERNAME}} and password is {{PASSWORD}}"
